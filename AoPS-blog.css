@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Inter";
+  src: url('https://github.com/Username93939/Stackfish-I/blob/e8c1d2184d4498064a7cb843b42b2c8eb83f9925/public/Inter-Regular.ttf') format('truetype');
+}
+a, h1, h2, h3, h4, h5, h6, p, label, span {
+  font-family: "Inter";
+}
+a {
+  font-weight: bold;
+}
+#main {
+  background-color: #dddddd
+}
 div .entrywrap, div .entrywrap-hover {
   background-color : #123456;
   transition: 0.3s all;
@@ -6,7 +19,17 @@ img {
   border-radius: 8px
 }
 html{
-  cursor: default;
+  cursor: url(https://raw.githubusercontent.com/Username93939/Stackfish-I/Stackfish-I/public/images/cursor_1.png) 20 20, default !important;
+  background-image: url(https://artofproblemsolving.com/assets/images/logo-ludicrous.gif)
+}
+a, span[class="archive-month-header"], span[class="aops-icon blog-delete-shout"] {
+  cursor: url(https://artofproblemsolving.com/assets/images/logo-ludicrous.gif) 20 20, pointer !important;
+}
+a:hover {
+  text-decoration: underline;
+}
+div[class="entry"] h1 a {
+  color: #656565;
 }
 .entrywrap{
   border-radius: 16px;
@@ -16,122 +39,182 @@ html{
 }
 @media (prefers-color-scheme: dark) {
   html{
-    background-color: #012345;
+  background-color: #012345;
   }
   div .entrywrap, div .entrywrap-hover, #side {
-    background-color : #123456;
-    color: #ffffff;
+  background-color : #123456;
+  color: #ffffff;
   }
   .entrywrap a {
-    color: #ffffff;
+  color: #ffffff;
   }
   #side #archive-widget a, #side #user-menu-widget a, #side #contrib-widget a{
-    color: #ffffff;
+  color: #ffffff;
   }
   #content{
-    background-color: #dddddd;
+  background-color: #123456;
   }
   a, h2 {
-    color: #656565;
+  color: #656565;
   }
   a:visited {
-    color: #656565;
+  color: #656565;
   }
   .entrywrap a:visited {
-    color: #ffffff;
+  color: #ffffff;
   }
   #side #archive-widget a:hover, #side #user-menu-widget a:hover, #side #contrib-widget a:hover{
-    color: #ffffff;
+  color: #ffffff;
   }
-  .blog-post-comment {
-    background-color: #042243;
-    padding: 1%;
-    border-radius: 8px;
-    color: #ffffff;
+  .blog-post-box {
+  background-color: #042243;
+  padding: 1%;
+  border-radius: 8px;
+  color: #ffffff;
   }
-  .blog-post-comment:visited {
-    color: #ffffff;
+  .blog-post-box:visited {
+  color: #ffffff;
   }
   .blog-tags-wrapper {
-    border-radius: 8px;
+  border-radius: 8px;
   }
   h1 {
-    color: #656565;
+  color: #656565;
   }
   #header h1 {
-    color: #ffffff;
+  color: #ffffff;
   }
   .blog-shout-wrapper {
-    color: #656565;
+  color: #656565;
   }
   .blog-shout-wrapper .aops-scroll-inner .aops-scroll-content li a:visited {
-    color: #656565;
+  color: #656565;
   }
   .blog-shout-wrapper .aops-scroll-inner .aops-scroll-content li a {
-    color: #656565;
+  color: #656565;
   }
   .blog-shout-wrapper .aops-scroll-inner .aops-scroll-content li a:hover {
-    color: #656565;
+  color: #656565;
   }
 }
 @media (prefers-color-scheme: light) {
   html{
-    background-color: #012345;
+  background-color: #012345;
   }
   div .entrywrap, div .entrywrap-hover, #side {
-    background-color : #123456;
-    color: #ffffff;
+  background-color : #123456;
+  color: #ffffff;
   }
   .entrywrap a {
-    color: #ffffff;
+  color: #ffffff;
   }
   #side #archive-widget a, #side #user-menu-widget a, #side #contrib-widget a{
-    color: #ffffff;
+  color: #ffffff;
   }
   #content{
-    background-color: #dddddd;
+  background-color: #dddddd;
   }
   a, h2 {
-    color: #656565;
+  color: #656565;
   }
   a:visited {
-    color: #656565;
+  color: #656565;
   }
   .entrywrap a:visited {
-    color: #ffffff;
+  color: #ffffff;
   }
   #side #archive-widget a:hover, #side #user-menu-widget a:hover, #side #contrib-widget a:hover{
-    color: #ffffff;
+  color: #ffffff;
   }
-  .blog-post-comment {
-    background-color: #042243;
-    padding: 1%;
-    border-radius: 8px;
-    color: #ffffff;
+  .blog-post-box {
+  background-color: #042243;
+  padding: 1%;
+  border-radius: 8px;
+  color: #ffffff;
   }
-  .blog-post-comment:visited {
-    color: #ffffff;
+  .blog-post-box:visited {
+  color: #ffffff;
   }
   .blog-tags-wrapper {
-    border-radius: 8px;
+  border-radius: 8px;
   }
   h1 {
-    color: #656565;
+  color: #656565;
   }
   #header h1 {
-    color: #ffffff;
+  color: #ffffff;
   }
   .blog-shout-wrapper {
-    color: #656565;
+  color: #656565;
   }
   .blog-shout-wrapper .aops-scroll-inner .aops-scroll-content li a:visited {
-    color: #656565;
+  color: #656565;
   }
   .blog-shout-wrapper .aops-scroll-inner .aops-scroll-content li a {
-    color: #656565;
+  color: #656565;
   }
   .blog-shout-wrapper .aops-scroll-inner .aops-scroll-content li a:hover {
-    color: #656565;
+  color: #656565;
+  }
+}
+@media (prefers-color-scheme: light) {
+  html{
+  background-color: #012345;
+  }
+  div .entrywrap, div .entrywrap-hover, #side {
+  background-color : #123456;
+  color: #ffffff;
+  }
+  .entrywrap a {
+  color: #ffffff;
+  }
+  #side #archive-widget a, #side #user-menu-widget a, #side #contrib-widget a{
+  color: #ffffff;
+  }
+  #content{
+  background-color: #dddddd;
+  }
+  a, h2 {
+  color: #656565;
+  }
+  a:visited {
+  color: #656565;
+  }
+  .entrywrap a:visited {
+  color: #ffffff;
+  }
+  #side #archive-widget a:hover, #side #user-menu-widget a:hover, #side #contrib-widget a:hover{
+  color: #ffffff;
+  }
+  .blog-post-box {
+  background-color: #042243;
+  padding: 1%;
+  border-radius: 8px;
+  color: #ffffff;
+  }
+  .blog-post-box:visited {
+  color: #ffffff;
+  }
+  .blog-tags-wrapper {
+  border-radius: 8px;
+  }
+  h1 {
+  color: #656565;
+  }
+  #header h1 {
+  color: #ffffff;
+  }
+  .blog-shout-wrapper {
+  color: #656565;
+  }
+  .blog-shout-wrapper .aops-scroll-inner .aops-scroll-content li a:visited {
+  color: #656565;
+  }
+  .blog-shout-wrapper .aops-scroll-inner .aops-scroll-content li a {
+  color: #656565;
+  }
+  .blog-shout-wrapper .aops-scroll-inner .aops-scroll-content li a:hover {
+  color: #656565;
   }
 }
 #wrapper{
@@ -174,4 +257,45 @@ html{
 }
 .blog-posts-box div div:hover {
   filter: drop-shadow(0px 0px 0px white)
+}
+#user-menu-widget:active img {
+  content: url(https://github.com/Username93939/Stackfish-I/blob/Stackfish-I/public/images/yahaha.jpeg?raw=true);
+}
+#user-menu-widget img {
+  background-image: url(https://artofproblemsolving.com/assets/images/logo-ludicrous.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#user-menu-widget:active .username-colored:after {
+  content: 'Yahaha you found me!';
+  visibility: visible;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#user-menu-widget:active .username-colored {
+  visibility: hidden;
+}
+#user-menu-widget .username-colored{
+  position: relative;
+}
+#user-menu-widget {
+  user-select: none;
+}
+img {
+  -webkit-user-drag: none;
+}
+code[class*="language-"], pre[class*="language-"] {
+  color: #2d2d2d;
+}
+.entrywrap a {
+  font-family: Roboto;
+  font-weight: bold;
+}
+.entrywrap {
+  font-family: "Inter"
+}
+.cmty-poll-display {
+  border-radius: 8px;
+  color: #000000;
 }
